@@ -1,22 +1,52 @@
-.App {
-  text-align: center;
+.icon-nav-find {
+  position: absolute !important;
+  top: 2px !important;
 }
-
-.App-logo {
-  height: 40vmin;
+.find {
+  padding-right: 50px;
+  padding-left: 10px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.find input {
+  padding-left: 15px;
+  padding-right: 30px;
+}
+.ml-3 {
+  margin-left: 2rem;
+}
+.mtb-3 {
+  margin: 2rem 0;
+}
+.mtb-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.mb-1 {
+  margin-bottom: 8px;
+}
+.mt-2 {
+  margin-top: 1rem;
+}
+.pb-2 {
+  padding-bottom: 30px !important;
+}
+.icon-done {
+  color: green;
+  margin-left: 5px;
+  font-size: 30px !important;
+  margin-top: -4px;
+}
+.icon-clear {
+  color: red;
+  margin-left: 5px;
+  font-size: 30px !important;
+  margin-top: -4px;
+}
+.hireable-text {
+  color: black;
+  margin: 0;
+  display: inline-flex;
+  vertical-align: top;
+}
+.chip {
   color: white;
-}
-
-.App-link {
-  color: #09d3ac;
 }

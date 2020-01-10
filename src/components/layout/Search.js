@@ -1,12 +1,20 @@
 import React, { Component } from "react";
-
+import M from "../../../node_modules/materialize-css/dist/js/materialize.min.js";
+import PropTypes from "prop-types";
 class Search extends Component {
+  static propTypes = {
+    onSearch: PropTypes.func.isRequired
+  };
   state = {
     term: ""
   };
   onSubmit = e => {
     e.preventDefault();
-    this.props.onSearch(this.state.term);
+    if (this.state.term.length === 0) {
+      M.toast({ html: "Please Type something" });
+    } else {
+      this.props.onSearch(this.state.term);
+    }
   };
   onChange = e => {
     this.setState({ term: e.target.value });

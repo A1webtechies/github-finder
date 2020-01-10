@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 const RepoListItem = ({ repos }) => {
   const listData = repos.map(repo => (
     <li className="collection-item" key={repo.id}>
@@ -8,5 +8,7 @@ const RepoListItem = ({ repos }) => {
   ));
   return listData;
 };
-
+RepoListItem.prototype = {
+  repos: PropTypes.object.isRequired
+};
 export default RepoListItem;
